@@ -135,7 +135,7 @@ li p {
     border-top: .8rem solid transparent;
 }
 
-@media only screen and (min-width:651px)and (max-width:900px) {
+@media only screen and (min-width:481px)and (max-width:900px) {
     html {
         font-size: 45%;
     }
@@ -161,7 +161,7 @@ li p {
 }
 
 
-@media only screen and (max-width:650px) {
+@media only screen and (max-width:480px) {
     html {
         font-size:45%;
     }
@@ -174,7 +174,7 @@ li p {
    
     
     #timeline-sec ul li {
-        width: 43rem;
+        width: 40rem;
         min-height: 20rem;
         
         padding: 3rem;
