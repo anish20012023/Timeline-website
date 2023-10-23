@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#header {
+    height: 20rem;
+    background-color: rgb(91, 137, 205);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+
+
+}
+
+#header h1 {
+    font-size: 4rem;
+
+}
+
+#header h3 {
+    font-size: 2rem;
+}
+
+#timeline-sec {
+    background-color: rgb(31, 56, 94);
+    min-height: 100vh;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+#timeline-sec ul {
+    background-color: white;
+    width: .8rem;
+    position: relative;
+
+
+
+}
+
+#timeline-sec ul li {
+
+    list-style: none;
+    margin: 5rem 0;
+    width: 35rem;
+    height: 15rem;
+    padding: 2rem;
+    background-color: rgb(91, 137, 205);
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+
+
+
+}
+
+li h3 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+
+}
+
+li p {
+    font-size: 1.3rem;
+    font-weight: 100;
+    line-height: 2.3rem;
+}
+
+#timeline-sec ul li:nth-child(odd) {
+    left: 4rem;
+}
+
+#timeline-sec ul li:nth-child(even) {
+    left: -39rem;
+}
+
+#timeline-sec ul li:nth-child(odd)::before {
+    content: "";
+    background-color: rgb(91, 137, 205);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    bottom: 0;
+    left: -4.8rem;
+    position: absolute;
+    transition: all 0.3s;
+
+}
+
+#timeline-sec ul li:nth-child(even)::before {
+    content: "";
+    background-color: rgb(91, 137, 205);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    bottom: 0;
+    right: -5.8rem;
+    position: absolute;
+    transition: all 0.3s;
+
+}
+
+#timeline-sec ul li:nth-child(odd):after {
+    content: "";
+    position: absolute;
+    bottom: .6rem;
+    right: 100%;
+    border-right: 1.6rem solid rgb(91, 137, 205);
+    ;
+    border-bottom: .8rem solid transparent;
+    border-top: .8rem solid transparent;
+}
+
+#timeline-sec ul li:nth-child(even):after {
+    content: "";
+    position: absolute;
+    bottom: .6rem;
+    left: 100%;
+    border-left: 1.6rem solid rgb(91, 137, 205);
+    ;
+    border-bottom: .8rem solid transparent;
+    border-top: .8rem solid transparent;
+}
+
+@media only screen and (min-width:651px)and (max-width:900px) {
+    html {
+        font-size: 45%;
+    }
+
+    #timeline-sec ul li {
+        width: 40rem;
+        height: 22rem;
+    }
+
+    li h3 {
+        font-size: 2.6rem;
+
+    }
+
+    li p {
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+
+    #timeline-sec ul li:nth-child(even) {
+        left: -44.2rem;
+    }
+}
+
+
+@media only screen and (max-width:650px) {
+    html {
+        font-size:45%;
+    }
+   
+    #timeline-sec {
+        display: block;
+        padding: 3rem 3rem;
+       overflow: hidden;
+    }
+   
+    
+    #timeline-sec ul li {
+        width: 43rem;
+        min-height: 20rem;
+        
+        padding: 3rem;
+    
+    }
+    
+    li h3 {
+        font-size: 2.4rem;
+       
+        margin-bottom: 1.3rem;
+    
+    }
+    
+    li p {
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+    
+    #timeline-sec ul li:nth-child(even) {
+       left: 4rem;
+    }
+    #timeline-sec ul li::before {
+        content:"" !important;
+        background-color: rgb(91, 137, 205);
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+        bottom: 0;
+        left: -4.8rem;
+        position: absolute;
+        transition: all 0.3s;
+
+    }
+    
+    #timeline-sec ul li:nth-child(odd)::before {
+        content:none;
+    }
+    
+    #timeline-sec ul li:nth-child(even)::before {
+        content: none; 
+    }
+  
+    
+    #timeline-sec ul li:nth-child(odd):after {
+        content: "";
+        position: absolute;
+        bottom: .6rem;
+        right: 100%;
+        border-right: 1.6rem solid rgb(91, 137, 205);
+        ;
+        border-bottom: .8rem solid transparent;
+        border-top: .8rem solid transparent;
+    }
+    #timeline-sec ul li:nth-child(even):after {
+        content: "";
+        position: absolute;
+        bottom: .6rem;
+        right:none;
+        left:-1.6rem;
+        
+        border-right: 1.6rem solid  rgb(91, 137, 205);
+        ;
+        border-bottom: .8rem solid transparent;
+        border-top: .8rem solid transparent;
+    }
+    #timeline-sec ul li:nth-child(even):after {
+border-left: 1.6rem transparent;
+       }
+   
+
+    }
+    
+    
